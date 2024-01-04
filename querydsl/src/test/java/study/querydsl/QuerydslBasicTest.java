@@ -723,7 +723,7 @@ public class QuerydslBasicTest {
     public void sqlFunction(){
         List<String> result = queryFactory
                 .select(Expressions.stringTemplate(
-                        "function('replace',{0}, {1}, {2})",
+                        "function('replace',{0}, {1}, 'ss')",
                         member.username,
                         "member", "M"))
                 .from(member)
